@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Spinner -->
+        <Spinner
+            android:id="@+id/workouttype"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button"
+            android:entries="@array/workout_types"
+            android:textSize="25sp" />
+
+        <!-- Find Workout Button -->
+        <Button
+            android:id="@+id/findworkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/workouttype"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_bg"
+            android:text="Find Workout"
+            android:textSize="18sp"
+            android:textColor="#ffffff" />
+
+        <!-- New Button Below Find Workout -->
+        <Button
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/findworkout"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_bg"
+            android:text="Open Timer"
+            android:textSize="18sp"
+            android:textColor="#ffffff" />
+
+        <!-- Heading -->
+
+        <!-- Your Workouts Text -->
+        <TextView
+            android:id="@+id/Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timer"
+            android:layout_marginTop="16dp"
+            android:text="Workouts"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Heading"
+            android:layout_marginTop="16dp"
+            android:text="Your Workouts"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+        <!-- Workout Image -->
+        <ImageView
+            android:id="@+id/workoutimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/workout"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+    </RelativeLayout>
+</ScrollView>
